@@ -10,131 +10,136 @@
   </a>
 </p>
 
-Ez a projekt egy fejlett, rugalmas és könnyen bővíthető REST API környezet Node.js és TypeScript alapokon. Az API célja, hogy egy univerzális backend megoldást biztosítson, amely automatikus routinggal, modellek kezelésével, többféle adatbázis támogatással és biztonsági funkciókkal rendelkezik.
+This project is an advanced, flexible, and easily extensible REST API environment built on Node.js and TypeScript. The goal of the API is to provide a universal backend solution featuring automatic routing, model management, support for multiple databases, and security features.
 
 ---
 
-## Tartalomjegyzék
+## Table of Contents
 
-- [Főbb jellemzők](#főbb-jellemzők)
-- [Technológiai stack](#technológiai-stack)
-- [Funkcionalitás](#funkcionalitás)
-- [API végpontok](#api-végpontok)
-- [Hitelesítés és biztonság](#hitelesítés-és-biztonság)
-- [Hibakezelés](#hibakezelés)
-- [Teljesítmény és korlátozások](#teljesítmény-és-korlátozások)
-- [Telepítés és futtatás](#telepítés-és-futtatás)
-- [Fejlesztői eszközök és jövőbeli fejlesztések](#fejlesztői-eszközök-és-jövőbeli-fejlesztések)
-- [Licenc](#licenc)
-
----
-
-## Főbb jellemzők
-
-- **Automatikus routing és modell kezelés**: Az API automatikusan kezeli a route-okat és az adatmodelleket, így gyorsan és egyszerűen bővíthető.
-- **Több adatbázis támogatás**: MongoDB, Sequelize (relációs adatbázisok), Drizzle támogatás.
-- **Biztonság**: JWT alapú hitelesítés és titkosítási megoldások.
-- **Rugalmas web szerver választás**: Express.js és Fastify támogatás, igény szerint választható.
-- **Hibakezelés**: Automatikus 404 és 500 hibakezelés, a szerver stabilitásának megőrzése érdekében.
-- **Rate limiting**: Express.js esetén beépített rate limit védelem, Fastify esetén fejlesztés alatt.
-- **Könnyű bővíthetőség**: Bármi, amit megírsz, integrálható a rendszerbe, legyen az új endpoint, modell vagy middleware.
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Functionality](#functionality)
+- [API Endpoints](#api-endpoints)
+- [Authentication and Security](#authentication-and-security)
+- [Error Handling](#error-handling)
+- [Performance and Limitations](#performance-and-limitations)
+- [Installation and Running](#installation-and-running)
+- [Developer Tools and Future Development](#developer-tools-and-future-development)
+- [License](#license)
 
 ---
 
-## Technológiai stack
+## Key Features
+
+- **Automatic Routing and Model Handling**: The API automatically manages routes and data models, making it quick and easy to extend.
+- **Multiple Database Support**: Supports MongoDB, Sequelize (relational databases), and Drizzle.
+- **Security**: JWT-based authentication and encryption solutions.
+- **Flexible Web Server Choice**: Support for Express.js and Fastify, selectable as needed.
+- **Error Handling**: Automatic 404 and 500 error handling to ensure server stability.
+- **Rate Limiting**: Built-in rate limit protection for Express.js; Fastify support is under development.
+- **Easy Extensibility**: Anything you develop—new endpoints, models, or middleware—can be integrated into the system.
+
+---
+
+## Technology Stack
 
 - **Backend**: Node.js, TypeScript
-- **Web szerver**: Express.js, Fastify (választható)
-- **Adatbázisok**: MongoDB, Sequelize (relációs adatbázisok), Drizzle (választható)
-- **Hitelesítés**: JWT (JSON Web Token)
-- **Rate limiting**: express-rate-limit (Express esetén)
-- **Egyéb**: Automatikus routing és modell generálás
+- **Web Server**: Express.js, Fastify (selectable)
+- **Databases**: MongoDB, Sequelize (relational databases), Drizzle (selectable)
+- **Authentication**: JWT (JSON Web Token)
+- **Rate Limiting**: express-rate-limit (for Express)
+- **Other**: Automatic routing and model generation
 
 ---
 
-## Funkcionalitás
+## Functionality
 
-Ez az API nem egy egyszerű REST szolgáltatás, hanem egy komplex környezet, amely:
+This API is not just a simple REST service, but a complex environment that:
 
-- Bármilyen adatmodellt képes kezelni, amit a fejlesztő definiál.
-- Automatikusan létrehozza a hozzá tartozó végpontokat.
-- Biztosítja a biztonságos hozzáférést JWT tokenekkel és titkosítással.
-- Kezeli a hibákat és a nem létező útvonalakat automatikusan.
-- Képes többféle adatbázis kezelővel együttműködni, így rugalmasan alkalmazható különböző projektekhez.
-- Támogatja a különböző web szervereket, így könnyen váltható Express és Fastify között.
+- Can handle any data model defined by the developer.
+- Automatically creates the corresponding endpoints.
+- Provides secure access with JWT tokens and encryption.
+- Automatically handles errors and nonexistent routes.
+- Supports multiple database engines, making it flexible for various projects.
+- Supports different web servers, allowing easy switching between Express and Fastify.
 
 ---
 
-## API végpontok
+## API Endpoints
 
-- **Alapértelmezett egészségügyi ellenőrző végpont**:  
+- **Default Health Check Endpoint**:  
   `GET /health`  
-  Visszaadja a szerver állapotát, hogy az API elérhető-e.
+  Returns the server status to indicate whether the API is available.
 
-- **Hibakezelő végpontok**:
-  - `404 Not Found`: Ha egy nem létező útvonalat hívnak meg.
-  - `500 Internal Server Error`: Ha a szerveren váratlan hiba történik.
-
----
-
-## Hitelesítés és biztonság
-
-- **JWT alapú hitelesítés**: Az API támogatja a JSON Web Token alapú hitelesítést, amely biztonságos és széles körben használt megoldás.
-- **Titkosítás**: A rendszer beépített titkosítási mechanizmusokat tartalmaz, de lehetőség van további egyedi megoldások integrálására.
-- **Rugalmas bővíthetőség**: Az alapvető funkciók és infrastruktúra egy stabil, külső npm csomagra épül, amelyeket nem célszerű módosítani. Ehelyett a rendszer úgy van kialakítva, hogy könnyedén lehessen hozzáadni teljesen egyedi, saját fejlesztésű hitelesítési, jogosultsági vagy egyéb üzleti logikákat, anélkül, hogy az alapokat érintenénk. Így a projekt igényeihez igazítható, miközben megőrzi a stabilitást és a frissíthetőséget.
+- **Error Handling Endpoints**:
+  - `404 Not Found`: When a nonexistent route is requested.
+  - `500 Internal Server Error`: When an unexpected server error occurs.
 
 ---
 
-## Hibakezelés
+## Authentication and Security
 
-- **Automatikus 404 kezelés**: Ha egy nem létező útvonalat hívnak meg, az API automatikusan 404-es választ ad.
-- **Automatikus 500 kezelés**: Váratlan szerverhibák esetén az API 500-as hibakódot ad vissza, miközben megakadályozza a szerver összeomlását.
-- **Stabilitás**: A hibakezelés célja, hogy a szerver folyamatosan elérhető maradjon, még kritikus hibák esetén is.
-
----
-
-## Teljesítmény és korlátozások
-
-- **Rate limiting**: Az Express.js alapú szervereknél beépített rate limiting védelem van, amely megakadályozza a túlzott lekérdezéseket és védi az API-t a túlterheléstől. A rate limiting beállításai a /src/utils/ratelimit.ts fájlban találhatók.
-- **Fastify esetén**: A rate limiting megoldás még fejlesztés alatt áll, hamarosan elérhető lesz.
-- **Caching**: Jelenleg nincs beépített caching, de a rendszer könnyen bővíthető ilyen funkcióval.
+- **JWT-Based Authentication**: The API supports JSON Web Token authentication, a secure and widely-used method.
+- **Encryption**: The system includes built-in encryption mechanisms, with the option to integrate custom solutions.
+- **Flexible Extensibility**: Core features and infrastructure are built on a stable, external npm package that should not be modified. Instead, the system is designed to allow easy integration of custom authentication, authorization, or other business logic without altering the foundations. This ensures the project remains adaptable while maintaining stability and updatability.
 
 ---
 
-## Telepítés és futtatás
+## Error Handling
+
+- **Automatic 404 Handling**: The API automatically returns a 404 response when a nonexistent route is called.
+- **Automatic 500 Handling**: In the case of unexpected server errors, the API returns a 500 status code and prevents server crashes.
+- **Stability**: The purpose of error handling is to ensure the server remains accessible even in the event of critical failures.
+
+---
+
+## Performance and Limitations
+
+- **Rate Limiting**: Express.js-based servers include built-in rate limiting protection to prevent excessive requests and safeguard the API from overload. The rate limiting settings can be found in `/src/utils/ratelimit.ts`.
+- **For Fastify**: Rate limiting is still under development and will be available soon.
+- **Caching**: Currently, there is no built-in caching, but the system can easily be extended with such a feature.
+
+---
+
+## Installation and Running
 
 ```bash
 npm install -g @flutry/cli
 flutry new my-app
+cd my-app
+yarn install
+yarn dev
 ```
 
-Vagy
+OR
 
 ```bash
 npx @flutry/cli new my-app
+yarn install
+yarn dev
 ```
 
-A CLI részletes dokumentációját megtalálod a [Flutry CLI dokumentáció](https://flutry.com/docs/package/cli) oldalon.
+You can find the detailed documentation of the CLI at the [Flutry CLI Documentation](https://flutry.com/docs/package/cli) page.
 
 ---
 
-## Fejlesztői eszközök és jövőbeli fejlesztések
+## Developer Tools and Future Development
 
-- Jelenleg nincs Swagger vagy OpenAPI dokumentáció, azonban a [weboldalunk dokumentációjában](https://flutry.com/docs) részletes leírások és példakódok találhatók, amelyek segítik az API használatát és integrációját.
-- SDK-k vagy Postman gyűjtemények jelenleg nem állnak rendelkezésre, de a rendszer automatikus routingja miatt könnyen tesztelhető bármilyen HTTP klienssel.
-- A Fastify rate limiting fejlesztés alatt áll, hamarosan elérhető lesz.
-
----
-
-## Licenc (MIT)
-
-Ez a projekt szabadon használható és módosítható a saját igényeid szerint.
-Ha nyilvánosan megosztod, kérlek tüntesd fel a szerzőt és a forrást.
+- Currently, there is no Swagger or OpenAPI documentation available. However, our [website documentation](https://flutry.com/docs) contains detailed descriptions and code examples to help with using and integrating the API.
+- SDKs or Postman collections are not yet available, but thanks to the system’s automatic routing, it can be easily tested with any HTTP client.
+- Fastify rate limiting is under development and will be available soon.
 
 ---
 
-Ha bármilyen kérdésed vagy javaslatod van, nyugodtan jelezd!
+## License (MIT)
+
+This project is free to use and modify according to your own needs.  
+If you share it publicly, please credit the author and the source.
 
 ---
 
-Köszönöm, hogy ezt a rendszert használod!
+If you have any questions or suggestions, feel free to reach out!
+
+---
+
+Thank you for using this system!

@@ -1,1 +1,3 @@
-console.log('Hello Flutry Api Template');
+import { Flutry } from '@flutry/main';
+
+new Flutry().CreateInstance();
