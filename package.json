@@ -1,6 +1,6 @@
 {
   "name": "flutry",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "main.js",
   "scripts": {
     "start": "tsc && cross-env NODE_ENV=production node ./dist/main.js",
@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "@flutry/express": "^0.0.3",
-    "@flutry/main": "^0.0.3",
+    "@flutry/main": "^0.0.4",
+    "@flutry/sequelize": "^0.0.1",
     "cross-env": "^7.0.3"
   },
   "devDependencies": {
