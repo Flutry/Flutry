@@ -1,0 +1,20 @@
+{
+  "name": "flutry",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node ./dist/main.js",
+    "dev": "cross-env NODE_ENV=development tsx --watch ./src/main.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Flutry",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
