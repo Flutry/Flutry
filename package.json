@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "@flutry/express": "^0.0.3",
-    "@flutry/main": "^0.0.4",
+    "@flutry/fastify": "^0.0.3",
+    "@flutry/main": "^0.0.5",
     "@flutry/sequelize": "0.0.2",
     "cross-env": "^7.0.3"
   },
