@@ -10,7 +10,7 @@
   "author": "Flutry",
   "license": "MIT",
   "dependencies": {
-    "@flutry/express": "^0.0.5",
+    "@flutry/express": "^0.0.7",
     "@flutry/fastify": "^0.0.6",
     "@flutry/main": "^0.0.7",
     "@flutry/sequelize": "^0.0.2",

@@ -1,4 +1,4 @@
-import { SocketIO } from '@flutry/fastify';
+import { SocketIO } from '@flutry/express';
 import { FlutryLogger } from '@flutry/main';
 
 SocketIO.io.on('connection', (socket: any) => {
