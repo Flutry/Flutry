@@ -14,7 +14,7 @@
     "@flutry/fastify": "^0.0.8",
     "@flutry/main": "^0.0.7",
     "@flutry/sequelize": "^0.0.3",
-    "@flutry/tools": "^0.0.7",
+    "@flutry/tools": "^0.0.9",
     "cross-env": "^7.0.3"
   },
   "devDependencies": {
