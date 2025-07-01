@@ -11,10 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "@flutry/express": "^0.1.0",
-    "@flutry/fastify": "^0.1.0",
-    "@flutry/main": "^0.0.9",
-    "@flutry/sequelize": "^0.0.4",
-    "@flutry/tools": "^0.1.1",
+    "@flutry/fastify": "^0.1.1",
+    "@flutry/main": "^0.1.2",
+    "@flutry/sequelize": "^0.0.5",
+    "@flutry/tools": "^0.1.2",
     "cross-env": "^7.0.3"
   },
   "devDependencies": {

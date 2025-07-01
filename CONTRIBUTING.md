@@ -1,49 +1,49 @@
 # CONTRIBUTING
 
-Köszönjük, hogy érdeklődsz a Flutry projekt iránt és szeretnél hozzájárulni!  
-Az alábbi útmutató segít abban, hogy gördülékenyen és hatékonyan tudjunk együtt dolgozni.
+Thank you for your interest in the Flutry project and for considering contributing!  
+This guide will help ensure smooth and effective collaboration.
 
 ---
 
-## Hogyan járulhatsz hozzá?
+## How Can You Contribute?
 
-### Hibajelentés (Issue)
+### Reporting Issues
 
-- Kérjük, ellenőrizd, hogy a problémát már nem jelentették-e be korábban.
-- Ha új hibát találsz, nyiss egy új issue-t részletes leírással, lépésekkel a reprodukáláshoz és a környezeti információkkal (pl. Node.js verzió, operációs rendszer).
+- Please check if the issue has already been reported before submitting a new one.
+- If you find a new bug, open a new issue with a detailed description, steps to reproduce, and relevant environment information (e.g., Node.js version, operating system).
 
-### Új funkciók javaslata
+### Suggesting New Features
 
-- Nyiss egy új issue-t, amelyben részletezed az ötletedet és annak hasznosságát.
-- Ha lehetséges, adj példákat vagy használati eseteket.
+- Open a new issue describing your idea and its potential benefits.
+- If possible, provide examples or use cases to illustrate your suggestion.
 
-### Kód hozzájárulás (Pull Request)
+### Code Contributions (Pull Requests)
 
-- Fork-old a repót és hozz létre egy új branch-et a változtatásaidnak.
-- Írj tiszta, jól dokumentált kódot, és tartsd be a projekt kódolási stílusát.
-- Futtasd a teszteket, és győződj meg róla, hogy minden sikeresen lefut.
-- Írj részletes leírást a pull request-hez, hogy könnyen érthető legyen a változtatás célja.
-- Küldd be a pull request-et a `dev` branch-re.
-
----
-
-## Kódolási irányelvek
-
-- Használj TypeScript-et a projekt konzisztenciája érdekében.
-- Kövesd a meglévő kód stílusát és struktúráját.
-- Írj érthető commit üzeneteket (pl. `feat: új funkció hozzáadása`, `fix: hibajavítás`).
+- Fork the repository and create a new branch for your changes.
+- Write clean, well-documented code and follow the project's coding style.
+- Run all tests and ensure they pass successfully.
+- Add a detailed description to your pull request to clarify the purpose of your changes.
+- Submit your pull request to the `dev` branch.
 
 ---
 
-## Kommunikáció
+## Coding Guidelines
 
-- Ha kérdésed van, vagy segítségre van szükséged, nyugodtan nyiss egy issue-t vagy keress minket a [projekthez tartozó kommunikációs csatornán] [Discord](https://discord.gg/j6JFuvBGbn)
+- Use TypeScript to maintain consistency across the project.
+- Follow the existing code style and structure.
+- Write clear and descriptive commit messages (e.g., `feat: add new feature`, `fix: bug fix`).
 
 ---
 
-## Köszönet
+## Communication
 
-Köszönjük, hogy időt szánsz a Flutry fejlesztésére és támogatására!  
-Minden hozzájárulás értékes és nagyra becsüljük.
+- If you have questions or need assistance, feel free to open an issue or reach out to us on our [Discord channel](https://discord.gg/j6JFuvBGbn).
+
+---
+
+## Thank You
+
+Thank you for dedicating your time to improving and supporting Flutry!  
+Every contribution is valuable and greatly appreciated.
 
 ---

@@ -32,7 +32,7 @@ This project is an advanced, flexible, and easily extensible REST API environmen
 ## Key Features
 
 - **Automatic Routing and Model Handling**: The API automatically manages routes and data models, making it quick and easy to extend.
-- **Multiple Database Support**: Supports MongoDB, Sequelize (relational databases), and Drizzle.
+- **Multiple Database Support**: Supports Sequelize (relational databases).
 - **Security**: JWT-based authentication and encryption solutions.
 - **Flexible Web Server Choice**: Support for Express.js and Fastify, selectable as needed.
 - **Error Handling**: Automatic 404 and 500 error handling to ensure server stability.
@@ -45,7 +45,7 @@ This project is an advanced, flexible, and easily extensible REST API environmen
 
 - **Backend**: Node.js, TypeScript
 - **Web Server**: Express.js, Fastify (selectable)
-- **Databases**: MongoDB, Sequelize (relational databases), Drizzle (selectable)
+- **Databases**: Sequelize (relational databases)
 - **Authentication**: JWT (JSON Web Token)
 - **Rate Limiting**: express-rate-limit (for Express)
 - **Other**: Automatic routing and model generation
