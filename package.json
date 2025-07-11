@@ -12,8 +12,8 @@
   "dependencies": {
     "@flutry/express": "^0.1.0",
     "@flutry/fastify": "^0.1.1",
-    "@flutry/main": "^0.1.2",
-    "@flutry/sequelize": "^0.0.5",
+    "@flutry/main": "^0.1.5",
+    "@flutry/sequelize": "^0.0.6",
     "@flutry/tools": "^0.1.2",
     "cross-env": "^7.0.3"
   },
