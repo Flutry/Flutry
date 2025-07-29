@@ -10,9 +10,8 @@
   "author": "Flutry",
   "license": "MIT",
   "dependencies": {
-    "@flutry/express": "^0.1.0",
-    "@flutry/fastify": "^0.1.1",
-    "@flutry/main": "^0.1.6",
+    "@flutry/fastify": "^0.1.3",
+    "@flutry/main": "^0.1.7",
     "@flutry/sequelize": "^0.0.6",
     "@flutry/tools": "^0.1.2",
     "cross-env": "^10.0.0"

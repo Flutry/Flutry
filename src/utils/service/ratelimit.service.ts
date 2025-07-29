@@ -218,7 +218,7 @@ export class RateLimit {
           status: 429,
           error: 'Too Many Requests',
           message: 'Rate limit exceeded. Please try again later.',
-          retryAfter: reset,
+          retry_after: reset,
         },
         429,
       );

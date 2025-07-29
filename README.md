@@ -34,9 +34,9 @@ This project is an advanced, flexible, and easily extensible REST API environmen
 - **Automatic Routing and Model Handling**: The API automatically manages routes and data models, making it quick and easy to extend.
 - **Multiple Database Support**: Supports Sequelize (relational databases).
 - **Security**: JWT-based authentication and encryption solutions.
-- **Flexible Web Server Choice**: Support for Express.js and Fastify, selectable as needed.
+- **Flexible Web Server Choice**: Suppor Fastify.
 - **Error Handling**: Automatic 404 and 500 error handling to ensure server stability.
-- **Rate Limiting**: Built-in rate limit protection for Express.js; Fastify support is under development.
+- **Rate Limiting**: Built-in rate limit protection for Fastify
 - **Easy Extensibility**: Anything you develop—new endpoints, models, or middleware—can be integrated into the system.
 
 ---
@@ -44,10 +44,9 @@ This project is an advanced, flexible, and easily extensible REST API environmen
 ## Technology Stack
 
 - **Backend**: Node.js, TypeScript
-- **Web Server**: Express.js, Fastify (selectable)
+- **Web Server**: Fastify
 - **Databases**: Sequelize (relational databases)
 - **Authentication**: JWT (JSON Web Token)
-- **Rate Limiting**: express-rate-limit (for Express)
 - **Other**: Automatic routing and model generation
 
 ---
@@ -61,7 +60,7 @@ This API is not just a simple REST service, but a complex environment that:
 - Provides secure access with JWT tokens and encryption.
 - Automatically handles errors and nonexistent routes.
 - Supports multiple database engines, making it flexible for various projects.
-- Supports different web servers, allowing easy switching between Express and Fastify.
+- Supports different web servers Fastify.
 
 ---
 
