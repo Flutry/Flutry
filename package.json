@@ -10,14 +10,14 @@
   "author": "Flutry",
   "license": "MIT",
   "dependencies": {
-    "@flutry/fastify": "^0.1.3",
-    "@flutry/main": "^0.1.7",
+    "@flutry/fastify": "^0.1.4",
+    "@flutry/main": "^0.1.8",
     "@flutry/sequelize": "^0.0.6",
     "@flutry/tools": "^0.1.2",
     "cross-env": "^10.0.0"
   },
   "devDependencies": {
-    "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
   }
 }
