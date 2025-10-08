@@ -7,3 +7,7 @@ SocketIO.io.on('connection', (socket: any) => {
     FlutryLogger.getLogger().info('Disconnect ' + socket.id);
   });
 });
+
+export const sendRoom = (room: string, event: string, payload: any) => {
+  SocketIO.io.to(room).emit(event, payload);
+};

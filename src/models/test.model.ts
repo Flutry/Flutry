@@ -1,7 +1,7 @@
 import { Model, DataTypes, Sequelize } from '@flutry/sequelize';
 
 export type TestModelType = {
-  id: number;
+  id: string;
   message: string;
 };
 
@@ -10,9 +10,8 @@ export default class Test extends Model {
     Test.init(
       {
         id: {
-          type: DataTypes.INTEGER,
+          type: DataTypes.STRING,
           primaryKey: true,
-          autoIncrement: true,
         },
         message: {
           type: DataTypes.STRING,
