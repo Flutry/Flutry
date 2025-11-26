@@ -10,9 +10,9 @@
   "author": "Flutry",
   "license": "MIT",
   "dependencies": {
-    "@flutry/fastify": "^0.1.6",
+    "@flutry/fastify": "^0.1.8",
     "@flutry/mail": "^0.0.2",
-    "@flutry/main": "^0.2.5",
+    "@flutry/main": "^0.2.7",
     "@flutry/sequelize": "^0.1.0",
     "@flutry/tools": "^0.1.32",
     "cross-env": "^10.1.0"
