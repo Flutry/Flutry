@@ -10,15 +10,15 @@
   "author": "Flutry",
   "license": "MIT",
   "dependencies": {
-    "@flutry/fastify": "^0.1.9",
-    "@flutry/mail": "^0.0.3",
-    "@flutry/main": "^0.2.8",
-    "@flutry/sequelize": "^0.1.1",
-    "@flutry/tools": "^0.1.34",
+    "@flutry/fastify": "^0.2.0",
+    "@flutry/mail": "^0.0.4",
+    "@flutry/main": "^0.2.9",
+    "@flutry/sequelize": "^0.1.2",
+    "@flutry/tools": "^0.1.35",
     "cross-env": "^10.1.0"
   },
   "devDependencies": {
-    "@types/nodemailer": "^7.0.4",
+    "@types/nodemailer": "^7.0.11",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
