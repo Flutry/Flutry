@@ -1,7 +1,7 @@
 {
-  "name": "flutry",
+  "name": "server",
   "version": "0.0.1",
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
     "start": "tsc && cross-env NODE_ENV=production node ./dist/main.js",
     "dev": "cross-env NODE_ENV=development tsx --watch ./src/main.ts"
@@ -10,12 +10,15 @@
   "author": "Flutry",
   "license": "MIT",
   "dependencies": {
+    "@fastify/multipart": "^10.0.0",
     "@flutry/fastify": "^0.2.2",
     "@flutry/mail": "^0.0.5",
     "@flutry/main": "^0.3.4",
     "@flutry/sequelize": "^0.1.7",
     "@flutry/tools": "^0.1.38",
-    "cross-env": "^10.1.0"
+    "cross-env": "^10.1.0",
+    "node-cron": "^4.2.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/nodemailer": "^7.0.11",

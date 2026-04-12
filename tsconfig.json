@@ -11,8 +11,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "skipLibCheck": true,
-    "incremental": true,
-    "noEmit": true
+    "incremental": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
