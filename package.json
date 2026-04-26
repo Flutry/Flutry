@@ -15,7 +15,7 @@
     "@flutry/mail": "^0.0.5",
     "@flutry/main": "^0.3.4",
     "@flutry/sequelize": "^0.1.7",
-    "@flutry/tools": "^0.1.38",
+    "@flutry/tools": "^0.1.39",
     "cross-env": "^10.1.0",
     "node-cron": "^4.2.1",
     "zod": "^4.3.6"
